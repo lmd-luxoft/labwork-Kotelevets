@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> My webpage </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  
+  <header>
+  <div class="container">
+    <menu id="headerMenu" class="clearfix">
+      <a class="navbar-brand" href="index.html"><img src="./images/brand_image.jpg" alt="brand cat" /></a>
+	    <nav class="navbar-nav">
+	      <ul>
+  	      <li class="nav-item"><a class="nav-link  active" href="index.html">Home</a></li>
+  	    	<li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+  	    	<li class="nav-item"><a class="nav-link" href="./survey.html">Survey</a></li>
+  	    	<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+  	    </ul>
+  	  </nav>
+		</menu>
+  </div>  
+  </header>
+  
+  <main>  
+    <div class="container">
+      <h1> Hello, World! </h1>
+      <p> Paragraf <span>Line of the text</span> <span>Line of the text</span> <span>Line of the text</span></p>
+  
+      <span>Line of the text</span>
+      <br/>
+      <br/>
+      
+      <div> Block 
+        <img id="fullImage" src="picture cat.jpg" alt="pretty cat" />
+        <img id="emptyImage" src="picture cat2.jpg" alt="pretty cat" />
+      </div>
+      
+      <!-- ordered list type = i, a, A -->
+      <ol type="i"> 
+        <li>item 1</li>
+	      <li>item 2</li>
+	      <li>item 3</li>
+      </ol>
+      
+      <!-- unordered list type = circle, square, disc -->
+      <ul type="square"> 
+        <li>item 1</li>
+	      <li>item 2</li>
+	      <li>item 3</li>
+      </ul>
+      
+      <p>
+        <b>Only bold string</b>
+        <strong>Strong string</strong>
+      </p>
+      
+      <p>
+        <i>Italic text</i>
+        <em>Emphasis element</em>
+      </p>
+      
+      <a href="https:\google.com"> Link to Google </a>
+      <br/>
+      <a href="https:\google.com" target="_blank"> Link to Google in a new window (tab) </a>
+      
+      <br/>
+      <table border="1">
+          <tr>
+	        <th colspan=2>Title</th>
+	    	<th>Price</th>
+	      </tr>
+	      <tr>
+	        <td>Microcomputer</td>
+	        <td>Raspberry PI</td>
+	    	<td>120$</td>
+	      </tr>
+	      <tr>
+	        <td rowspan=2>Gadgets</td>
+	    	<td>ZegBee</td>
+	    	<td>15$</td>
+	      </tr>
+	      <tr>
+	    	<td>IKEA Lightstorm</td>
+	    	<td>6$</td>
+	      </tr>	  
+      </table>
+      <br/>
+    
+      <script>
+        document.write("<div>");  
+        document.write("<div>A</div><div>B</div>");
+        document.write("<span>A</span><span>B</span>");
+        document.write("<span style='color:red'>A</span>\
+                        <span style='color:blue'>B</span>");
+        document.write("<p>This is a paragraph.</p>");
+        document.write ("<p>This is another paragraph.</p>");
+	    document.write("</div>");
+      </script>
+      
+      <form action="action.html" method="POST"> 
+      <!-- action - back-end file to execute; default method - GET; name - идет в запрос -->
+        <label for="name">Enter name:</label>
+	    <input type="text" id="name" name="name"/>
+	    <br/>
+	    <label for="pass">Enter password:</label>
+        <input type="password" id="pass" name="pass"/>
+	    <br/>
+	    
+	    <input type="radio" name="kind" value="1"/> Robot
+	    <input type="radio" name="kind" value="2"/> Human
+	    
+	    <br/>
+        <input type="submit"/>	
+      </form>
+      
+      
+      <!-- веб-сокеты; <textarea>  -->
+    </div>
+  </main>
+   
+  <footer>
+    <div class="container clearfix">
+      <span>Здесь будет футер</span>
+      <p class="copyright">© KOTYA 2023</p>
+    </div>
+  </footer>
+   
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> My webpage </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  
+  <header>
+  <div class="container">
+    <menu id="headerMenu" class="clearfix">
+      <a class="navbar-brand" href="index.html"><img src="./images/brand_image.jpg" alt="brand cat" /></a>
+	    <nav class="navbar-nav">
+	      <ul>
+  	      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+  	    	<li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+  	    	<li class="nav-item"><a class="nav-link active" href="./survey.html">Survey</a></li>
+  	    	<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+  	    </ul>
+  	  </nav>
+		</menu>
+  </div>  
+  </header>
+  
+    <main>  
+      <div class="container">
+
+        <h1>Vacation traveling survey</h1>
+       	<hr align="left" size="2" width="575"/>
+        <br/>
+       	
+        <form action="action.html" method="GET" class="survey-form"> 
+          
+		      <label for="name">Enter your full name:</label>
+       	  <input type="text" id="name" name="name" autofocus="true"/>
+       	  <br/><br/>	
+       	
+       	  <div>
+       	  Who are you? <br/>
+       	    <input type="radio" name="sex" value="1" checked /> Man <br/>
+       	    <input type="radio" name="sex" value="2"/> Woman <br/>
+       	    <input type="radio" name="sex" value="3"/> Child <br/>
+       	    <input type="radio" name="sex" value="10"/> Other <br/>
+       	  </div>
+       	
+       	  <br/>
+       	  <hr align="left" size="2" width="575"/>
+       	  <br/>
+       	
+       	  <label for="country">Enter visited country:</label>
+          <select id="country" name="country">
+       	    <option> </option>
+       	    <optgroup label="East Europe">
+       	    <option>Poland</option>
+       	    <option>Lithuania</option>
+       	    <option>Slovakia</option>
+       	    <option>Hungary</option>
+       	    <option>Romania</option>
+       	    <option>Czechia</option>
+       	    <option>Austria</option>
+       	    <option>Slovenia</option>
+       	    <option>Croatia</option>
+       	    <option>Bosnia and Herzegovina</option>
+       	    <option>Slovakia</option>
+       	    <option>Montenegro</option>
+       	    <option>Albania</option>
+       	    <option>Serbia</option>
+       	    <option>Bulgaria</option>
+       	    <option>Greece</option>
+       	    <option>Turkey</option>
+       	    <optgroup label="West Europe">
+       	    <option>Italy</option>
+       	    <option>Austria</option>
+       	    <option>Serbia</option>
+       	    <option>Switzerland</option>
+       	    <option>Germany</option>
+       	    <option>Netherlands</option>
+       	    <option>Belgium</option>
+       	    <option>France</option>
+       	    <option>Spain</option>
+       	    <option>United Kingdom</option>
+       	    <option>Ireland</option>
+       	    <option>Denmark</option>
+       	    <option>Norway</option>
+       	    <option>Sweden</option>
+       	    <option>Finland</option>
+       	  </select>
+       		
+       	  <label for="country">Enter visited date:</label>
+       	  <input type="date" id="datetrip" name="datetrip" />
+       	  <br/><br/>
+       	       	
+       	  <div>
+       	    How have you get the trip? <br/>
+       	    <input type="radio" name="source" value="1" checked /> Travel company <br/>
+       	    <input type="radio" name="source" value="2"/> Company business trip <br/>
+       	    <input type="radio" name="source" value="3"/> Friends <br/>
+       	    <input type="radio" name="source" value="4"/> Won <br/>
+       	    <input type="radio" name="source" value="5"/> By itself <br/>
+       	    <input type="radio" name="source" value="10"/> Other <br/>
+       	  </div>
+       	  <br/>
+       	
+       	  <fieldset>
+            <legend>Travel actions:</legend>
+            <div>
+               <input type="checkbox" id="allinclusive" name="allinclusive" checked/>
+               <label for="allinclusive">all inclusive</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="beach" name="beach">
+              <label for="beach">beach</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mountains" name="mountains">
+              <label for="mountains">mountains</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="diving" name="diving">
+              <label for="diving">diving</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="spa" name="spa">
+              <label for="spa">spa &amp; welness</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="bike" name="bike">
+              <label for="bike">bike trip</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="walking" name="walking">
+              <label for="walking">walking tour</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="food" name="food">
+              <label for="food">food tour</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="shopping" name="shopping">
+              <label for="shopping">shopping</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="photovideo" name="photovideo">
+              <label for="photovideo">video &amp; photo</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="business" name="business">
+              <label for="business">business trip</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="family" name="family">
+              <label for="family">family trip</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="cruise" name="cruise">
+              <label for="cruise">ship cruise</label>
+            </div>
+       	    <div>
+              <input type="checkbox" id="othertrip" name="othertrip">
+              <label for="othertrip">other</label>
+            </div>
+          </fieldset>
+       
+       	  <br/></br>
+       	
+       	  <label for="shortstory">Describe your impression (short story):</label>
+       	  <br/>
+       	  <textarea id="shortstory" name="impression" rows="10" cols="76"></textarea>
+       	  <br/>
+       	
+       	  <br/>
+            <input type="checkbox" id="gdprcheckbox" name="GDPR"/>
+            <label for="gdprcheckbox">I agree to get my private data for the site</label>	
+       	  <br/><br/>
+       	
+          <input type="submit" value="Send Survey"/>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container clearfix">
+        <span>Здесь будет футер</span>
+        <p class="copyright">© KOTYA 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

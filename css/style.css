@@ -1,0 +1,108 @@
+/*
+div{} - по имени тэга
+#openButton{} - по ID
+div#openButton{} - div c определенным ID
+.myClass{} - по классу
+
+div p{} - для всех параграфов внутри div
+div > p - для всех непосредственно дочерних параграфов в div
+div + p - для всех параграфов на одном уровне (с одним родителем) сразу после div
+div ~ p - для всех параграфов на одном уровне (с одним родителем) с div
+*/
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.container{
+  width: 1200px;
+	margin: 0px auto;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+	padding-bottom: 20px;
+}
+
+header .container{
+	padding-bottom: 0px;
+}
+
+menu .navbar-brand{
+  float: left;
+	padding-top: 5px; 
+}
+
+menu .navbar-nav{
+	float: right;
+}
+
+menu .navbar-brand img{
+  height: 100px;
+  width: 100px;
+  border-radius: 200px;
+  border: 2px solid rgba(128, 128, 128, 0.3);
+	transition-duration: 1.5s;
+}
+
+menu .navbar-brand img:hover{
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0px 0px 15px 2px rgba(128, 128, 128, 0.8);
+	transform: rotate(-15deg);
+	transition-duration: 1.5s;
+}
+
+.navbar-nav{
+	padding-top: 15px;
+}
+
+.navbar-nav ul{
+	list-style-type: none;
+}
+
+.navbar-nav ul li{
+	float: left;
+	border-right: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+.navbar-nav ul>li:last-child{
+  border-right: none;
+}
+
+.navbar-nav li>a{
+	display: block;
+  text-decoration: none;
+	padding: 10px 20px;
+	transition-duration: 1.5s;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.navbar-nav li>a:hover{
+	color: white;
+	background-color: rgba(128, 128, 128, 0.8);
+}
+
+.navbar-nav li>a.active{
+	padding-bottom: 5px;
+}
+
+.navbar-nav li>a.active::after{
+	content:"";
+	display: block;
+	padding-top: 3px;
+	border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+.navbar-nav li>a.active:hover::after{
+  border-bottom: 2px solid white;
+}
+
+.survey-form fieldset{
+	width: 550px;
+}
+
+.copyright{
+	float: right;
+	font-weight: bold;
+	color:rgba(128, 128, 128, 0.8);
+	padding: 10px 20px;
+	border-left: 2px solid rgba(128, 128, 128, 0.3);
+}
